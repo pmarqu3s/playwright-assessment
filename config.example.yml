@@ -1,0 +1,6 @@
+app:
+  base_url: "https://your-app-domain/"
+  auth_domain: "your-auth-domain"
+
+account:
+  username: "your-user@example.com"
