@@ -36,7 +36,7 @@ TOTP_SECRET=...
 Production environment may treat Playwright runs as a new device and trigger device verification.
 To reduce repeated verification prompts, run the state setup test first in headed mode:
 
-pytest -v --headed tests/save_state.py
+pytest --headed tests/save_state.py
 
 When the test pauses:
 1) Open the verification email and approve the new device.
@@ -57,7 +57,7 @@ so it may fail before reaching the application UI. By default firefox is the bro
 headless works with it.
 
 ### Improvements
-1) Locators could be improved
+1) Locators
 2) Figure out a solution to chromium headless mode limitation
 3) Report
 4) Make the 2FA requirement optional. However flow is not always the same in this case
